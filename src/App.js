@@ -1,35 +1,25 @@
 import "./App.css";
 import { BookCard } from "./components/BookCard";
+import { Header } from "./components/Header";
 
 const bookList = [
-  { isbn: 9780099285823, name: "BookName", author: "Author" },
-  { isbn: 9780099455424, name: "BookName", author: "Author" },
-  { isbn: 9780099461883, name: "BookName", author: "Author" },
-  { isbn: 9780857209030, name: "BookName", author: "Author" },
-  { isbn: 9781450026338, name: "BookName", author: "Author" },
-  { isbn: 9781471183676, name: "BookName", author: "Author" },
-  { isbn: 9781648272608, name: "BookName", author: "Author" },
-  { isbn: 9781685796365, name: "BookName", author: "Author" },
-  { isbn: 9781800812970, name: "BookName", author: "Author" },
-  { isbn: 9781841593623, name: "BookName", author: "Author" },
+  { isbn: 9780099285823, name: "Experience", author: "Martin Amis" },
+  { isbn: 9780099455424, name: "The Rachal Papers", author: "Martin Amis" },
+  { isbn: 9780099461883, name: "Money", author: "Martin Amis" },
+  { isbn: 9780857209030, name: "Killers of the flower moon", author: "David Grann" },
+  { isbn: 9781450026338, name: "The penance walk", author: "John Mannering" },
+  { isbn: 9781471183676, name: "The Wager", author: "David Grann" },
+  { isbn: 9781648272608, name: "Mushoku Tensei vol 12", author: "Rifujin na Magonote" },
+  { isbn: 9781685796365, name: "Mushoku Tensei vol 22", author: "Rifujin na Magonote" },
+  { isbn: 9781800812970, name: "I wish I was nere", author: "John Harrison" },
+  { isbn: 9781841593623, name: "London fields", author: "Martin Amis" },
 ];
 
 function App() {
   return (
     <>
-      <div className="main">
-        <h1>BookSite</h1>
-        <ul className="nav">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about.html">Slider</a>
-          </li>
-          <li>
-            <a href="work.html">Form</a>
-          </li>
-        </ul>
+      <main>
+        <Header/>
         <div className="page-content">
           <div className="side-bar">
             <div className="side-bar-content">
@@ -41,18 +31,14 @@ function App() {
           </div>
           <div className="content-books">
             {bookList.slice(0, 6).map((book) => (
-              <div key={book.isbn} className="book">
-                <img src={`./bookcovers/${book.isbn}.jpg`} />
-                <h2>{book.name}</h2>
-                <h3>{book.author}</h3>
-              </div>
+                  <BookCard>{book}</BookCard>
             ))}
           </div>
         </div>
-      </div>
-      <div className="footer">
+      </main>
+      <footer>
         <p>&copy; Footer content</p>
-      </div>
+      </footer>
     </>
   );
 }

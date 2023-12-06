@@ -1,5 +1,9 @@
-export function BookCard(isbn, name, author) {
+export function BookCard({ children }) {
   return (
-book
+    <div key={children.isbn} className="book">
+      <img src={`./bookcovers/${children.isbn}.jpg`} />
+      <h2>{children.name}</h2>
+      <h3>{children.author}</h3>
+    </div>
   );
 }

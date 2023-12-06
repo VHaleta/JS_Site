@@ -1,15 +1,17 @@
-h1, h2, h3 {
-  margin: 10px
+h1,
+h2,
+h3 {
+  margin: 10px;
 }
 
-.content-books{
+.content-books {
   width: 800px;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 20px;
 }
 
-.book{
+.book {
   width: 200px;
   height: auto;
   margin-top: 20px;
@@ -18,23 +20,23 @@ h1, h2, h3 {
   border-radius: 5px;
 }
 
-.book img{
+.book img {
   width: 100%;
 }
 
 .side-bar {
   width: 200px;
-  background-color:#656565;
+  background-color: #656565;
   margin-top: 10px;
 }
 
-.side-bar-content{
+.side-bar-content {
   padding: 5px;
   margin: 10px;
   background-color: white;
 }
 
-.side-bar-content img{
+.side-bar-content img {
   width: 100%;
 }
 
@@ -43,47 +45,45 @@ h1, h2, h3 {
   flex-wrap: wrap;
 }
 
-.main {
+main {
   padding-top: 5px;
-background-color: white;
-width: 1000px;
-margin: 0 auto;
-box-shadow: 0 0 3px rgba(0,0,0,0.5);
--webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  background-color: white;
+  width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
-
 
 /*Навигация*/
 ul.nav {
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
 }
 
 ul.nav li {
-float: left;
-list-style: none;
-border-right: 1px solid #272727;
+  float: left;
+  list-style: none;
+  border-right: 1px solid #272727;
 }
 
 ul.nav li a {
-font-size: 14px;
-font-weight: bold;
-color: white;
-text-decoration: none;
-padding: 6px 25px 7px;
-display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 6px 25px 7px;
+  display: block;
 }
 
 ul.nav li a:hover {
-background-color: #272727;
+  background-color: #272727;
 }
 
-.footer {
-width: 1000px;
-margin: 0 auto;
-padding: 8px 0;
+footer {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 8px 0;
   color: #656565;
 }
-
