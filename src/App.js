@@ -1,6 +1,6 @@
 import "./App.css";
-import { BookCard } from "./components/BookCard";
-import { Header } from "./components/Header";
+import { BookCard } from "./components/BookCard/BookCard";
+import { Header } from "./components/Header/Header";
 
 const bookList = [
   { isbn: 9780099285823, name: "Experience", author: "Martin Amis" },

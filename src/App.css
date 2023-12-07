@@ -55,31 +55,6 @@ main {
 }
 
 /*Навигация*/
-ul.nav {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-}
-
-ul.nav li {
-  float: left;
-  list-style: none;
-  border-right: 1px solid #272727;
-}
-
-ul.nav li a {
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  padding: 6px 25px 7px;
-  display: block;
-}
-
-ul.nav li a:hover {
-  background-color: #272727;
-}
 
 footer {
   width: 1000px;
