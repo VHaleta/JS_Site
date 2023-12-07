@@ -1,0 +1,12 @@
+.book {
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.book img {
+  width: 100%;
+}

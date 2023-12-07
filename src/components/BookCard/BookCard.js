@@ -1,4 +1,6 @@
-export function BookCard({ children }) {
+import './bookCard.css'
+
+const BookCard = ({ children }) => {
   return (
     <div key={children.isbn} className="book">
       <img src={`./bookcovers/${children.isbn}.jpg`} />
@@ -7,3 +9,5 @@ export function BookCard({ children }) {
     </div>
   );
 }
+
+export default BookCard
