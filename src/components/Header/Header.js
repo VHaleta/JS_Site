@@ -15,7 +15,7 @@ const Header = () => {
               <a href="/slider/Martin Amis">Martin Amis</a>
               <a href="/slider/David Grann">David Grann</a>
               <a href="/slider/John Mannering">John Mannering</a>
-              <a href="/slider/John Mannering">Rifujin na Magonote</a>
+              <a href="/slider/Rifujin na Magonote">Rifujin na Magonote</a>
             </div>
           </div>
         </li>
