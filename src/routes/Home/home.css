@@ -1,22 +1,22 @@
 .content-books {
-    width: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-  }
-  
-  .side-bar {
-    width: 200px;
-    background-color: #656565;
-    margin-top: 10px;
-  }
-  
-  .side-bar-content {
-    padding: 5px;
-    margin: 10px;
-    background-color: white;
-  }
-  
-  .side-bar-content img {
-    width: 100%;
-  }
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.side-bar {
+  width: 200px;
+  background-color: #656565;
+  margin-top: 10px;
+}
+
+.side-bar-content {
+  padding: 5px;
+  margin: 10px;
+  background-color: white;
+}
+
+.side-bar-content img {
+  width: 100%;
+}

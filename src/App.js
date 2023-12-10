@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Home from "./routes/Home/Home";
+import Slider from "./routes/Slider/SliderPage";
 
 const bookList = [
   { isbn: 9780099285823, name: "Experience", author: "Martin Amis" },
@@ -23,6 +24,8 @@ function App() {
         <Header/>
         <Routes>
             <Route path="/" element={ <Home bookList={bookList}/> }/>
+            <Route path="/slider/:author" element={ <Slider bookList={bookList}/> }/>
+            <Route path="/slider" element={ <Slider bookList={bookList}/> }/>
         </Routes>
       </main>
       <footer>
