@@ -19,7 +19,7 @@ const FormPage = () => {
     {
       alert += 'First name is incorrect\n'
     }
-    if(!lastNameRef.current.value.match(lastNameRef))
+    if(!lastNameRef.current.value.match(lastNameVal))
     {
       alert += 'Last name is incorrect\n'
     }
