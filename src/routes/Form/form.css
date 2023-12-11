@@ -22,12 +22,31 @@ textarea {
   margin-bottom: 0;
 }
 
-.submit {
-  padding: 20px;
-  margin: 10px;
-  width: 250px;
-}
-
 .submit h3{
     margin: 0;
+}
+
+.submit {
+  margin: 10px;
+  width: 250px;
+  position: relative;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid blue;
+  outline: 2px solid black;
+  outline-offset: -2px;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+  transition: outline-offset 200ms;
+}
+
+.submit:hover {
+  color: blue;
+  outline-offset: 3px;
+  outline: 2px solid blue;
+}
+
+.submit:active{
+  transform: scale(0.95);
 }

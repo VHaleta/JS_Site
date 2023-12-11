@@ -15,7 +15,7 @@ const Home = ({bookList}) => {
         </div>
         <div className="content-books">
           {bookList.slice(0, 6).map((book) => (
-            <BookCard>{book}</BookCard>
+            <BookCard animation={true}>{book}</BookCard>
           ))}
         </div>
       </div>
