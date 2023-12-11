@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Home from "./routes/Home/Home";
 import Slider from "./routes/Slider/SliderPage";
+import FormPage from "./routes/Form/FormPage";
 
 const bookList = [
   { isbn: 9780099285823, name: "Experience", author: "Martin Amis" },
@@ -26,6 +27,7 @@ function App() {
             <Route path="/" element={ <Home bookList={bookList}/> }/>
             <Route path="/slider/:author" element={ <Slider bookList={bookList}/> }/>
             <Route path="/slider" element={ <Slider bookList={bookList}/> }/>
+            <Route path="/form" element={ <FormPage/> }/>
         </Routes>
       </main>
       <footer>
