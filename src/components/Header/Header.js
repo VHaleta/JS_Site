@@ -22,6 +22,9 @@ const Header = () => {
         <li>
           <a href="/form">Form</a>
         </li>
+        <li>
+          <a href="/cart">Cart</a>
+        </li>
       </ul>
     </header>
   );

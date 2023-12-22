@@ -4,11 +4,12 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 
 const Slider = ({ bookList }) => {
-  const [beginIndex, setBeginIndex] = useState(0);
+  const [ beginIndex, setBeginIndex ] = useState(0);
   const { author } = useParams();
 
   if(author != null)
     bookList = bookList.filter((book) => book.author == author)
+
   const previousSlide = () => {
     if (beginIndex > 0) setBeginIndex((prevIndex) => prevIndex - 1);
   };
@@ -30,7 +31,7 @@ const Slider = ({ bookList }) => {
                     };
               return (
                 <div key={book.isbn} className="item" style={{ ...style }}>
-                  <BookCard>{book}</BookCard>
+                  <BookCard cart>{book}</BookCard>
                 </div>
               );
             })}

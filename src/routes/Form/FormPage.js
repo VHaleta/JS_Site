@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import "./form.css";
 
-const firstNameVal = /[a-z]{3,}$/
-const lastNameVal = /[a-z]{3,}$/
+const firstNameVal = /[a-z]{3,20}$/
+const lastNameVal = /[a-z]{3,20}$/
 const emailVal = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/
 const phoneVal = /\(\d{3}\)\d{7}$/
 

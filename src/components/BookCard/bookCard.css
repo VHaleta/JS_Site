@@ -11,11 +11,17 @@
   width: 100%;
 }
 
-.animation{
+.animation {
   transition: all 100ms;
 }
 
-.animation:hover{
+.animation:hover {
   margin-left: 30px;
   width: 220px;
+}
+
+.book h1,
+h2,
+h3 {
+  margin: 10px;
 }
